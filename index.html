@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Surf Club</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/colors.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="ghostWindow"></div>
+
+    <div id="videoView" class="container container-video" style="background-color: black;">
+      <div class="col-md-12 static-fill">
+        <!-- <div class="text-center" id="greeting">
+          <h1>Surfclub</h1>
+        </div> -->
+      </div>
+      <div id="video-container" class="videoWrapper intro-vid"></div>
+    </div>
+
+    <div id="gradientBackground" class="gradient-bg"></div>
+
+    <nav id="mainControls" class="navbar navbar-fixed-bottom text-center">
+
+        <div id="controlsChannelLabel" class="navbar-left">
+          <ul class="list-inline">
+            <li id="channelLabel"><h5>Welcome to Surf Club</h5></li>
+          </ul>
+        </div>
+
+        <div id="controlsButtons" class="nav-center">
+          <ul class="list-inline">
+            <li><input class="form-control" type="text" id="channelSearch" placeholder="Search Channels" onkeydown="if (event.keyCode == 13) { keyWordsearch()}"></input></li>
+            <li><button id="randomChannelButton" class="btn-default" onclick="randomSearch()"><i class="fa fa-random"></i></button></li>
+            <li><button id="volumeButton" class="btn-default"><i class="fa fa-volume-off"></i></button></li>
+            <li><button id="faveVideoButton" class="btn-default"><i class="fa fa-heart-o"></i></button></li>
+            <li><button id="videoInfoButton" class="btn-default"><i class="fa fa-info-circle"></i></button></li>
+            <li id="fullscreenButton"><button class="btn-default" onclick="fullscreen(document.documentElement)"><i class="fa fa-expand"></i></button></li>
+          </ul>
+        </div>
+
+        <div id="controlsLogo" class="navbar-right">
+          <ul class="list-inline">
+            <li><h5><button id="surfclubLogoButton" class="btn-default">Surfclub</button></h5></li>
+          </ul>
+        </div>
+
+    </nav>
+   
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    <script src="js/customsearch.js"></script>
+    <script src="js/code.js"></script>
+    <script src="js/randomSearch.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+  </body>
+</html>
